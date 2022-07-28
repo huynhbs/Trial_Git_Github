@@ -1,0 +1,216 @@
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+int main()
+{
+
+
+    uint16_t n, i;
+    char name[255];                         // khai bao bien ten
+    FILE* fi = fopen("D:/1.HUYNH_private_C/7.Project/C_Project/data_input.txt", "r");     // mo file de doc
+    FILE* fo = fopen("outputaaa.txt", "w");    // mo file de ghi
+
+    fscanf(fi, "%d", &n);                   // doc so n tu file fi
+
+    fgets(name, 255, fi);                   // loai bo dau xuong dong sau khi doc so n
+
+    for (i = 0; i < n; i++)
+    {
+        fgets(name, 255, fi);               // doc chuoi gom 255 ky tu tu file fi
+        fprintf(fo, "%d.%s", (i + 1), name);  // ghi chuoi ra file fo
+    }
+
+    fclose(fi);     // dong file fi
+    fclose(fo);     // dong file fo
+    i = getch();
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+    for (int line = 0; line <= 6; line++)
+    {
+        if (line < 4)
+        {
+            //print space
+            for (int i=0; i < line; i++)
+            {
+                printf(" ");
+            }
+            //print fitst aterist
+            printf("*");
+            //print space
+            for (int i = 0; i <7 - 2 -2*line; i++)
+            {
+                printf(" ");
+            }
+            printf("*");
+            //print space
+            for (int i = 0; i <= line; i++)
+            {
+                printf(" ");
+            }
+            printf("\n");
+        }
+    }
+
+    return 0;
+}
+*/
+#include <stdio.h>
+#include <math.h>
+#include <stdbool.h >
+//#include <cstdint.h>
+
+void Weather_Station(void)
+    {
+    double C_Degree, F_Degree;
+    printf("Enter C_temperature is:");
+    scanf("%lf", &C_Degree);
+    printf("F_temperature coressponding is :%lf", C_Degree * 1.8 + 32);
+
+    }
+
+// void main() {
+
+    // char caculator;
+    // double num1, num2;
+    // printf("which expression is: ");
+    // scanf("%c", &caculator);
+    // printf("entry data number 1:");
+    // scanf("%lf", &num1);
+    // printf("entry data number 2:");
+    // scanf("%lf", &num2);
+    // switch (caculator)
+    // {
+    // case '+':
+        // printf("Add exxpress between num1 and num2 is: %.2lf", num1 + num2);
+        // break;
+    // case '-':
+        // printf("Sub exxpress between num1 and num2 is: %.2lf", num1 - num2);
+        // break;
+    // case '*':
+        // printf("Mult exxpress between num1 and num2 is: %.2lf", num1*num2);
+        // break;
+    // case '/':
+        // printf("Dev exxpress between num1 and num2 is: %.2lf", num1/num2);
+        // break;
+
+    // }
+
+// }
+	// int main()
+	// {
+	// #define EQUAL 		0x00
+	// #define NEQUAL 		0x01
+	// int num1,num2,num3,result;	
+	
+	// printf("entry data of num1 is: ");	
+	// scanf("%d",&num1);	
+	// printf("entry data of num2 is: ");	
+	// scanf("%d",&num2);	
+	// printf("entry data of num3 is: ");	
+	// scanf("%d",&num3);	
+	// if(num1 == num2)
+	// {
+		// result = EQUAL;
+		// if(num1 == num3)
+		// {
+			// result = EQUAL;
+		// }
+		// else
+		// {
+			// result = NEQUAL;
+		// }
+	// }
+	// else
+	// {
+		// result = NEQUAL;
+	// }
+	// printf("result of comparison bettween three numbers is: ");	
+	// if (result == EQUAL)
+	// {
+		// printf("EQUAL");
+	// }
+	// else if(result == NEQUAL)
+	// {
+		// printf("NOT EQUAL");		
+	// }
+	// return 0;
+		
+	// }
+// int main()
+// {
+	// #define ASCENDING 		0x00
+	// #define NASCENDING 		0x01
+	// int num,digit1,digit2,digit3,result;	
+	
+	// printf("entry data of num is: ");	
+	// scanf("%d",&num);	
+	// if(num <0) num = - num;
+	// digit1 = num/100;
+	// digit2 = (num - 100*digit1)/10;
+	// digit3 = (num - 100*digit1 - 10*digit2);
+	// if(digit1 < digit2)
+	// {
+		// result = ASCENDING;
+		// if(digit2 < digit3)
+		// {
+			// result = ASCENDING;
+		// }
+		// else
+		// {
+			// result = NASCENDING;
+		// }
+	// }
+	// else
+	// {
+		// result = NASCENDING;
+	// }	
+	
+	// printf("result of comparison digits is: ");	
+	// if (result == ASCENDING)
+	// {
+		// printf("ASCENDING");
+	// }
+	// else if(result == NASCENDING)
+	// {
+		// printf("NOT ASCENDING");		
+	// }
+	// return 0;
+// }
+
+
+int main()
+
+{
+	int x, y;
+	printf("entry value of x:");
+	scanf("%d", &x);
+	printf("entry value of y:");
+	scanf("%d", &y);
+	if (x * y != 0)
+	{
+		if ((x * y) > 0)
+		{
+
+			if (x > 0) printf("this point is located at first Quadrant\n");
+			else printf("this point is located at third Quadrant\n");
+		}
+		else
+		{
+			if(x > 0)  printf("this point is located at fourth Quadrant\n");
+			else printf("this point is located at second Quadrant\n");
+
+
+		}
+	}
+	else printf("this point is located at boudary of Quadrant:\n");
+	return 0;
+
+}
+
+

@@ -1,0 +1,4 @@
+﻿  first_solution.c
+D:\1.HUYNH_private_C\7.Project\TheCompleteCLanguage_Course\FirstSolution\FirstProject\first_solution.c(26,16): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\1.HUYNH_private_C\7.Project\TheCompleteCLanguage_Course\FirstSolution\FirstProject\first_solution.c(27,16): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\1.HUYNH_private_C\7.Project\TheCompleteCLanguage_Course\FirstSolution\FirstProject\first_solution.c(29,5): error C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
